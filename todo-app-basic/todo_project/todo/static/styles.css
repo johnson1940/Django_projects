@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    background: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #ffffff;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+li .completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+li button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+li button:hover {
+    background-color: darkred;
+}
+
+.date-text {
+    color: #888;  /* Light gray */
+    font-size: 0.85rem;  /* Slightly smaller */
+    font-style: italic;  /* Optional: Italic for better visibility */
+}
+
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: radial-gradient(circle, #111 10%, #000 80%);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Ensures text is aligned properly */
+    gap: 2px; /* Reduces the space between title and date */
+}
+
+.task-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0; /* Remove any unwanted margins */
+    padding: 0;
+    color: white;
+}
+
+.date-text {
+    color: #888;
+    font-size: 0.85rem;
+    font-style: italic;
+    margin: 0; /* Ensure no extra spacing */
+    padding: 0;
+}
+
+
+.task-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.complete-btn, .delete-btn {
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.complete-btn {
+    background: #28a745; /* Green */
+}
+
+.delete-btn {
+    background: #dc3545; /* Red */
+}
+
+@media (max-width: 800px) {
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start; /* Align text and buttons to the left */
+    }
+    
+    .task-buttons {
+        width: 100%;
+        justify-content: flex-start; /* Buttons align to the left */
+        margin-top: 5px;
+        margin-top: 20px;
+    }
+}
+
+@keyframes darkBackground {
+    0% { background: radial-gradient(circle, #111 10%, #000 80%); }
+    50% { background: radial-gradient(circle, #222 30%, #000 100%); }
+    100% { background: radial-gradient(circle, #111 10%, #000 80%); }
+}
+
+body {
+    animation: darkBackground 6s infinite ease-in-out;
+    transition: background 0.5s ease-in-out;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+}
