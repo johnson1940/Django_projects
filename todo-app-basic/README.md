@@ -1,7 +1,7 @@
 Core Concepts and Why They Are Used in This Project
 This Django + JavaScript-based To-Do List API project follows the RESTful API architecture using Django REST Framework (DRF). Here’s an explanation of the key concepts used and why they are important:
 
-# 1. Backend (Django & Django REST Framework)
+# Backend (Django & Django REST Framework)
 ## (A) Views
 APIView (from rest_framework.views)
 Used for handling API requests in class-based views.
